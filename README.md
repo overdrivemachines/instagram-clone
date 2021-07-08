@@ -45,6 +45,7 @@ Instead of dynamic use the linux username you are logged in with
 * Database initialization
 ```sh
 $ rails db:create
+$ rails db:migrate
 
 ```
 
