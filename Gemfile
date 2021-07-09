@@ -11,6 +11,9 @@ gem 'webpacker', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
+gem 'carrierwave' # Upload files
+gem 'fog' # Ruby cloud services library
+gem 'mini_magick' # Image resize
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -23,6 +26,7 @@ group :development do
   gem 'spring'
 
   gem 'annotate'
+  gem 'figaro' # local environment variables
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
