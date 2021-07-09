@@ -9,9 +9,7 @@ https://www.youtube.com/watch?v=dqjF3C9A-Yg&list=PL-1jnVsiYID5HpCRxhsfEuscBXWrWu
 
 ## System dependencies
 
-
-
-* Configuration
+## Configuration
 
 ## Database creation
 ```sh
@@ -42,21 +40,24 @@ development:
 ```
 Instead of dynamic use the linux username you are logged in with
 
-* Database initialization
+## Database initialization
 ```sh
 $ rails db:create
 $ rails db:migrate
 
 ```
 
-* How to run the test suite
+## How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+## Deployment instructions
+Run in terminal:
+```sh
+$ rake webpacker:install
+$ sudo service postgresql start
+```
 
 ## References
 - https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-18-04
--
+- Bootstrap Bare Template - https://startbootstrap.com/template/bare
