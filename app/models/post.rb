@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
-  mount_uploaders :image, ImageUploader
+  # Connect model to uploader file
+  mount_uploader :image, ImageUploader
 end
