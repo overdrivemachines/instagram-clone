@@ -2,6 +2,8 @@
 
 https://www.youtube.com/watch?v=dqjF3C9A-Yg&list=PL-1jnVsiYID5HpCRxhsfEuscBXWrWuB6s&index=1
 
+## Model
+![App Entity-Relationship Diagram](erd.png)
 
 ## Version
 - ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-linux]

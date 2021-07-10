@@ -27,6 +27,7 @@ group :development do
 
   gem 'annotate'
   gem 'figaro' # local environment variables
+  gem 'rails-erd' # Generate Entity-Relationship Diagrams
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
