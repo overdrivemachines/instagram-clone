@@ -12,6 +12,22 @@ https://www.youtube.com/watch?v=dqjF3C9A-Yg&list=PL-1jnVsiYID5HpCRxhsfEuscBXWrWu
 ## System dependencies
 
 ## Configuration
+Carrierwave Steps:
+```sh
+$ rails g uploader Image # will create app/uploaders/image_uploader.rb
+$ touch config/initializers/carrierwave.rb
+$ touch config/application.yml # set local environment variables used by figaro
+```
+Change storage :fog in image_uploader.rb.
+Add configuration to `carrierwave.rb`
+Add environment variables in `application.yml`
+
+Connect model to uploader file. In 'app/models/post.rb' add:
+```ruby
+mount_uploader :image, ImageUploader
+```
+Use mount_uploaders for multiple file uploads and mount_uploader for single file uploads.
+
 
 ## Database creation
 ```sh
