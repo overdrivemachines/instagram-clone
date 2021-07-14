@@ -18,7 +18,7 @@ $ rails g uploader Image # will create app/uploaders/image_uploader.rb
 $ touch config/initializers/carrierwave.rb
 $ touch config/application.yml # set local environment variables used by figaro
 ```
-Change storage :fog in image_uploader.rb.
+Change to `storage :fog` in `image_uploader.rb`.
 Add configuration to `carrierwave.rb`
 Add environment variables in `application.yml`
 
@@ -26,8 +26,10 @@ Connect model to uploader file. In 'app/models/post.rb' add:
 ```ruby
 mount_uploader :image, ImageUploader
 ```
-Use mount_uploaders for multiple file uploads and mount_uploader for single file uploads.
+Use mount_uploaders for multiple file uploads and mount_uploader for single file uploads. Post model has field image that is of type string.
 
+Create controller in `app/controller/posts_controller.rb`
+Create form/view in `app/views/posts/new.html.erb`
 
 ## Database creation
 ```sh
