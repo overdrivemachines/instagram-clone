@@ -12,7 +12,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
 gem 'carrierwave' # Upload files
-gem 'fog' # Ruby cloud services library
+gem 'fog-aws' # Ruby cloud services library
 gem 'mini_magick' # Image resize
 
 group :development, :test do
