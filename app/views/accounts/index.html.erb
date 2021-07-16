@@ -2,9 +2,11 @@
 
 <div class="container">
   <div class="row">
-    <% @posts.each do |post| %>
-      <%= post.account.username %>
-      <%= image_tag post.image.url, class: "img img-fluid" %>
-    <% end %>
+    <div class="col-6">
+      <% @posts.each do |post| %>
+        <%= post.account.username %>
+        <%= image_tag post.image.url, class: "img img-fluid" %>
+      <% end %>
+    </div>
   </div>
 </div>
