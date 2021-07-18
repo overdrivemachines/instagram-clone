@@ -3,9 +3,7 @@ body {
 }
 
 .insta-post {
-  padding-bottom: 15px;
-  background: red;
-  border: 5px solid red;
+  margin-bottom: 15px;
 }
 .post-meta {
   background: #fff;
@@ -13,4 +11,15 @@ body {
   font-weight: bold;
   padding: 10px;
   border: 1px solid #ddd;
+}
+
+.account-summary {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.follower-suggestions {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
 }

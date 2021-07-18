@@ -31,6 +31,11 @@ Use mount_uploaders for multiple file uploads and mount_uploader for single file
 Create controller in `app/controller/posts_controller.rb`
 Create form/view in `app/views/posts/new.html.erb`
 
+If webpacker stops responding to changes in application.scss or application.js, run this command in terminal:
+```bash
+$ rails webpacker:install
+```
+
 ## Database creation
 ```sh
 $ gem install pg

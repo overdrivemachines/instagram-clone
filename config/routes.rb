@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   devise_for :accounts
   get "/dashboard", to: "accounts#index"
   resources :posts, only: [:new, :create, :show]
+  get "/profile/:username", to: "accounts#profile", as: :profile
 end
