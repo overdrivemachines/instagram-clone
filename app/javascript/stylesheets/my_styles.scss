@@ -11,6 +11,9 @@ body {
   font-weight: bold;
   padding: 10px;
   border: 1px solid #ddd;
+  img {
+    margin-right: 10px;
+  }
 }
 
 .account-summary {
@@ -28,9 +31,14 @@ body {
   float: left;
 }
 
-.profile-pic {
+.image-circle {
   border-radius: 50%;
 }
 .profile-posts {
   margin-top: 50px;
+}
+
+.post-details {
+  background: #fff;
+  padding: 15px;
 }
