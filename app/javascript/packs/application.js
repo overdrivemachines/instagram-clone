@@ -12,6 +12,7 @@ import "channels"
 
 import "bootstrap"
 import "@popperjs/core"
+import "@fortawesome/fontawesome-free/js/all";
 import "../src/my_script.js"
 
 Rails.start()

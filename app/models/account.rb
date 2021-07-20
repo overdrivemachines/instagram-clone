@@ -18,6 +18,9 @@
 #  first_name             :string(20)
 #  last_name              :string(20)
 #  username               :string(20)
+#  image                  :string
+#  description            :string
+#  website                :string
 #
 class Account < ApplicationRecord
   # Include default devise modules. Others available are:
