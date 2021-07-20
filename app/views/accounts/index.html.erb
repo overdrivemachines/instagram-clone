@@ -10,7 +10,16 @@
           </div>
           <%= image_tag post.image.url, class: "img img-fluid" %>
           <div class="post-details">
+            <p><strong><%= post.total_likes %> likes</strong></p>
+            <p>
+              <strong>
+                <%= link_to post.account.username, profile_path(post.account.username), class: "text-dark" %>
+              </strong>
+            </p>
             <%= simple_format post.description %>
+            <p class="text-muted">
+              <%= time_ago_in_words post.created_at %> ago
+            </p>
           </div>
         </div>
       <% end %>
@@ -18,12 +27,16 @@
     <div class="col-4">
       <div class="account-summary">
         <p>
-          <strong><%= current_account.username %></strong> <br>
+          <%= link_to image_tag(current_account.image.thumb.url, class: "image-circle"), profile_path(current_account.username) if current_account.image.present? %>
+          <strong><%= current_account.username %></strong>
+        </p>
+        <p>
           <%= current_account.full_name %>
         </p>
       </div>
       <div class="follower-suggestions">
-
+        <%= link_to "View All", "#", class: "float-end" %>
+        <p class="text-muted">Suggestions for you</p>
       </div>
     </div>
   </div>

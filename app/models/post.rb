@@ -15,8 +15,14 @@ class Post < ApplicationRecord
   belongs_to :account
   before_create :set_active
 
+  default_scope { order created_at: :desc }
   scope :active, -> { where active: true }
 
+  def total_likes
+    0
+  end
+
+  private
   def set_active
     self.active = true
   end
