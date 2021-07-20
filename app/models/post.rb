@@ -12,6 +12,7 @@
 class Post < ApplicationRecord
   # Connect model to uploader file
   mount_uploader :image, ImageUploader
+  has_many :likes, dependent: :destroy
   belongs_to :account
   before_create :set_active
 
