@@ -42,3 +42,19 @@ body {
   background: #fff;
   padding: 15px;
 }
+
+.post-actions {
+  margin-bottom: 20px;
+  color: #ddd;
+  .svg-inline--fa {
+    margin-right: 10px;
+    // color: #ddd;
+    cursor: pointer;
+  }
+  .svg-inline--fa:hover {
+    color: #999;
+  }
+  .svg-inline--fa.active {
+    color: #555;
+  }
+}
