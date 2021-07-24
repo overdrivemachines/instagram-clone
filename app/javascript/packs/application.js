@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 require.context("../images", true)
+require("jquery")
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
