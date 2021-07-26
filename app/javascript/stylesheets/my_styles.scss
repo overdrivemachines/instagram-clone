@@ -45,16 +45,15 @@ body {
 
 .post-actions {
   margin-bottom: 20px;
-  color: #ddd;
-  .svg-inline--fa {
-    margin-right: 10px;
-    // color: #ddd;
+  i, svg {
+    color: #ddd;
     cursor: pointer;
+    margin-right: 10px;
   }
-  .svg-inline--fa:hover {
+  i:hover, svg:hover {
     color: #999;
   }
-  .svg-inline--fa.active {
+  i.active, svg.active {
     color: #555;
   }
 }
