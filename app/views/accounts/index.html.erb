@@ -12,7 +12,7 @@
 
           <div class="post-details">
             <div class="post-actions">
-              <i class="fa fa-heart like-<%= post.id %> fa-2x post-like" data-id="<%= post.id %>"></i>
+              <i class="fa fa-heart like-<%= post.id %> <%= "active" if current_account.likes?(post.id) %> fa-2x post-like" data-id="<%= post.id %>"></i>
               <i class="fa fa-comment fa-2x post-comment"></i>
             </div>
             <p><strong><%= post.total_likes %> likes</strong></p>
