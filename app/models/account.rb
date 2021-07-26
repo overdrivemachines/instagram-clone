@@ -43,4 +43,15 @@ class Account < ApplicationRecord
   def total_following
     0
   end
+
+  # Does account like post having id p_id?
+  # Does not assume an account can like a
+  # post only once.
+  def likes?(p_id)
+    if self.likes.where(post_id: p_id).size >= 1
+      true
+    else
+      false
+    end
+  end
 end
