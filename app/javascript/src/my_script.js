@@ -1,5 +1,5 @@
 $(function() {
-  $(".post-like").on("click", function(){
+  $(".post-actions").on("click", "svg.post-like", function () {
     var post_id = $(this).data("id");
 
     $.ajax({
